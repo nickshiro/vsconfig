@@ -1,0 +1,95 @@
+{
+  //* Files
+  "files.autoSave": "afterDelay",
+  "files.maxMemoryForLargeFilesMB": 8196,
+  "files.associations": {
+    "*.css": "css"
+  },
+  //* Security
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  //* Extensions
+  "extensions.ignoreRecommendations": true,
+  //* Window
+  "window.commandCenter": false,
+  "window.openFilesInNewWindow": "off",
+  //* Explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDragAndDrop": false,
+  //* Workbench
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  //? Theme config
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Atom Background Modified Italic",
+  //* Editor
+  //? Format
+  "editor.formatOnSave": true,
+  "editor.glyphMargin": false,
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //? Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.excludeLanguages": [
+    "markdown",
+    "TypeScript",
+    "json",
+    "jsonc"
+  ],
+  //? Font config
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "normal",
+  "editor.fontFamily": "Fira Code, monospace",
+  "editor.stickyScroll.enabled": false,
+  //? BreadCrumbs
+  "breadcrumbs.enabled": false,
+  //* Format
+  //? Eslint
+  "eslint.run": "onSave",
+  //? Languages
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4
+  },
+  //* Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+}
