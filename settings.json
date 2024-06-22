@@ -1,6 +1,4 @@
 {
-  //* Files
-  "files.autoSave": "afterDelay",
   "files.maxMemoryForLargeFilesMB": 8196,
   "files.associations": {
     "*.css": "css"
@@ -15,11 +13,12 @@
   "window.openFilesInNewWindow": "off",
   //* Explorer
   "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
   "explorer.confirmPasteNative": false,
   "explorer.confirmDragAndDrop": false,
   //* Workbench
-  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
   //? Theme config
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Atom Background Modified Italic",
@@ -87,9 +86,14 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.tabSize": 4
   },
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
+  },
   //* Git
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
+  //* Discord
+  "discord.lowerDetailsEditing": "gopass.pornhub.com",
 }
