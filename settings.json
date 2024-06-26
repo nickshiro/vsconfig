@@ -1,55 +1,73 @@
 {
+  //! https://github.com/nikitakitsune/vsconfig
+  //! -----------------------------------------
+  //* Files
   "files.maxMemoryForLargeFilesMB": 8196,
-  "files.associations": {
-    "*.css": "css"
-  },
+  //
   //* Security
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.untrustedFiles": "open",
+  //
   //* Extensions
   "extensions.ignoreRecommendations": true,
+  //
   //* Window
   "window.commandCenter": false,
   "window.openFilesInNewWindow": "off",
+  "window.menuBarVisibility": "compact",
+  //
   //* Explorer
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
   "explorer.confirmPasteNative": false,
   "explorer.confirmDragAndDrop": false,
+  //
   //* Workbench
+  "workbench.tree.indent": 9,
   "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": false,
+  "workbench.tree.renderIndentGuides": "onHover",
+  //? Workbench editor
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.tabActionLocation": "right",
   //? Theme config
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Atom Background Modified Italic",
+  //
   //* Editor
-  //? Format
-  "editor.formatOnSave": true,
   "editor.glyphMargin": false,
   "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
   "editor.minimap.renderCharacters": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  //? Emmet
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.excludeLanguages": [
-    "markdown",
-    "TypeScript",
-    "json",
-    "jsonc"
-  ],
   //? Font config
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.fontWeight": "normal",
   "editor.fontFamily": "Fira Code, monospace",
-  "editor.stickyScroll.enabled": false,
+  //? Import coast
+  "importCost.margin": 1,
+  "importCost.fontStyle": "normal",
+  "importCost.bundleSizeDecoration": "both",
+  "importCost.smallPackageDarkColor": "green",
+  "importCost.mediumPackageDarkColor": "orange",
+  "importCost.largePackageDarkColor": "red",
+  "importCost.showCalculatingDecoration": true,
   //? BreadCrumbs
   "breadcrumbs.enabled": false,
+  //
   //* Format
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   //? Eslint
   "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  //? Prettier
+  "prettier.configPath": ".prettierrc",
+  //? Emmet
+  "emmet.triggerExpansionOnTab": true,
   //? Languages
   "workbench.editorAssociations": {
     "*.md": "vscode.markdown.preview.editor"
@@ -57,6 +75,9 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -68,7 +89,7 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -86,14 +107,10 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.tabSize": 4
   },
-  "[sass]": {
-    "editor.defaultFormatter": "syler.sass-indented"
-  },
+  //
   //* Git
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "git.openRepositoryInParentFolders": "never",
-  //* Discord
-  "discord.lowerDetailsEditing": "gopass.pornhub.com",
+  "git.openRepositoryInParentFolders": "never"
 }
