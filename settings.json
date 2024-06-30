@@ -1,6 +1,11 @@
 {
   //! https://github.com/nikitakitsune/vsconfig
   //! -----------------------------------------
+  //* Telemetry (xD)
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "postman.telemetry.enabled": false,
+  //
   //* Files
   "files.maxMemoryForLargeFilesMB": 8196,
   //
@@ -14,7 +19,7 @@
   //* Window
   "window.commandCenter": false,
   "window.openFilesInNewWindow": "off",
-  "window.menuBarVisibility": "compact",
+  "window.menuBarVisibility": "toggle",
   //
   //* Explorer
   "explorer.confirmDelete": false,
@@ -22,20 +27,29 @@
   "explorer.confirmPasteNative": false,
   "explorer.confirmDragAndDrop": false,
   //
+  //* Terminal 
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontFamily": "Consolas",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  //
   //* Workbench
-  "workbench.tree.indent": 9,
+  "workbench.tree.indent": 15,
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.editor.tabSizing": "shrink",
+  "workbench.list.smoothScrolling": true,
   "workbench.layoutControl.enabled": false,
   "workbench.tree.renderIndentGuides": "onHover",
+  "workbench.list.mouseWheelScrollSensitivity": 2,
   //? Workbench editor
   "workbench.editor.decorations.colors": true,
   "workbench.editor.decorations.badges": false,
   "workbench.editor.tabActionLocation": "right",
-  //? Theme config
-  "workbench.iconTheme": "material-icon-theme",
+  //? Theme
   "workbench.colorTheme": "Atom Background Modified Italic",
+  "workbench.iconTheme": "material-icon-theme",
   //
   //* Editor
   "editor.glyphMargin": false,
@@ -47,6 +61,8 @@
   "editor.fontLigatures": true,
   "editor.fontWeight": "normal",
   "editor.fontFamily": "Fira Code, monospace",
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollbar.horizontal": "visible",
   //? Import coast
   "importCost.margin": 1,
   "importCost.fontStyle": "normal",
@@ -112,5 +128,5 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
 }
