@@ -48,8 +48,8 @@
   "workbench.editor.decorations.badges": false,
   "workbench.editor.tabActionLocation": "right",
   //? Theme
-  "workbench.colorTheme": "Atom Background Modified Italic",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Atom Background Modified Italic",
   //
   //* Editor
   "editor.glyphMargin": false,
@@ -60,17 +60,17 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.fontWeight": "normal",
+  "editor.scrollbar.horizontal": "visible",
   "editor.fontFamily": "Fira Code, monospace",
   "editor.scrollbar.verticalScrollbarSize": 10,
-  "editor.scrollbar.horizontal": "visible",
   //? Import coast
   "importCost.margin": 1,
   "importCost.fontStyle": "normal",
+  "importCost.largePackageDarkColor": "red",
+  "importCost.showCalculatingDecoration": true,
   "importCost.bundleSizeDecoration": "both",
   "importCost.smallPackageDarkColor": "green",
   "importCost.mediumPackageDarkColor": "orange",
-  "importCost.largePackageDarkColor": "red",
-  "importCost.showCalculatingDecoration": true,
   //? BreadCrumbs
   "breadcrumbs.enabled": false,
   //
