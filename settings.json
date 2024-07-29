@@ -1,7 +1,7 @@
 {
   //! https://github.com/nikitakitsune/vsconfig
   //! -----------------------------------------
-  //* Telemetry (xD)
+  //* Telemetry
   "telemetry.telemetryLevel": "off",
   "redhat.telemetry.enabled": false,
   "postman.telemetry.enabled": false,
@@ -14,9 +14,12 @@
   "security.workspace.trust.untrustedFiles": "open",
   //
   //* Extensions
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": true,
   "extensions.ignoreRecommendations": true,
   //
   //* Window
+  "window.title": " ",
   "window.commandCenter": false,
   "window.openFilesInNewWindow": "off",
   "window.menuBarVisibility": "toggle",
@@ -24,8 +27,11 @@
   //* Explorer
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
   "explorer.confirmPasteNative": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": false,
   //
   //* Terminal 
   "terminal.integrated.fontSize": 14,
@@ -35,7 +41,7 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   //
   //* Workbench
-  "workbench.tree.indent": 15,
+  "workbench.tree.indent": 14,
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.editor.tabSizing": "shrink",
@@ -44,10 +50,12 @@
   "workbench.tree.renderIndentGuides": "onHover",
   "workbench.list.mouseWheelScrollSensitivity": 2,
   //? Workbench editor
+  "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.decorations.badges": false,
   "workbench.editor.tabActionLocation": "right",
   //? Theme
+  "workbench.productIconTheme": "bongocat",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Atom Background Modified Italic",
   //
@@ -56,22 +64,30 @@
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
   "editor.minimap.renderCharacters": false,
+  //? Paddings
+  "editor.padding.top": 4,
+  "editor.padding.bottom": 0,
   //? Font config
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.fontWeight": "normal",
-  "editor.scrollbar.horizontal": "visible",
   "editor.fontFamily": "Fira Code, monospace",
+  //? Scrollbar
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
   "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
   //? Import coast
   "importCost.margin": 1,
-  "importCost.fontStyle": "normal",
-  "importCost.largePackageDarkColor": "red",
-  "importCost.showCalculatingDecoration": true,
+  "importCost.fontStyle": "italic",
   "importCost.bundleSizeDecoration": "both",
   "importCost.smallPackageDarkColor": "green",
   "importCost.mediumPackageDarkColor": "orange",
-  //? BreadCrumbs
+  "importCost.largePackageDarkColor": "red",
+  "importCost.showCalculatingDecoration": true,
+  //? Color highlighter 
+  "color-highlight.markRuler": false,
+  //? Breadcrumbs
   "breadcrumbs.enabled": false,
   //
   //* Format
@@ -85,15 +101,20 @@
   //? Emmet
   "emmet.triggerExpansionOnTab": true,
   //? Languages
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
+    "*.md": "vscode.markdown.preview.editor",
+    "{git,gitlens}:/**/*.{md,csv,svg}": "default"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[sass]": {
     "editor.defaultFormatter": "syler.sass-indented"
+  },
+  "[postcss]": {
+    "editor.tabSize": 2
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
