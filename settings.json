@@ -1,169 +1,158 @@
 {
-  //! https://github.com/nikitakitsune/vsconfig
-  //! -----------------------------------------
+  //! https://github.com/nickshiro/vsconfig
+  //* VSC update
+  "update.mode": "manual",
+  "update.showReleaseNotes": true,
+  "update.enableWindowsBackgroundUpdates": false,
   /*
      
   */
-  //* Theme
-  "workbench.iconTheme": "material-icon-theme", // Replace files icons
-  "workbench.colorTheme": "Atom Background Modified Italic", // Replace colors
-  "workbench.productIconTheme": "bongocat", // Add small bongo cat
-  /*
-     
-  */
-  //* Editor font
-  "editor.fontSize": 14,
-  "editor.fontWeight": "550",
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "Fira Code, monospace",
-  /* 
-
-  */
-  //* Terminal font
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "Consolas",
-  /*
-   
-  */
-  //* Integrated terminal
-  "terminal.integrated.cursorStyle": "underline", // Cursor style
-  "terminal.integrated.cursorBlinking": true, // Enable cursor blinking
-  "terminal.integrated.defaultProfile.windows": "Git Bash", // Default terminal
-  /*
-     
-  */
-  //* Window
-  "window.zoomLevel": 0, // Declare zoom level
-  "window.title": "${rootName}", // Refactor useless window title
-  "window.commandCenter": false, // Remove useless command center (press ctrl+p)
-  "window.menuBarVisibility": "toggle", // Show menu bar only on Alt press
-  "window.confirmBeforeClose": "keyboardOnly", // Close window with keyboard only
-  "window.customMenuBarAltFocus": false, // Disable alt focus
-  /*
-     
-  */
-  //* Scroll
-  //? Workbench
-  "workbench.list.smoothScrolling": true, // Smooth scrolling effect
-  "workbench.list.mouseWheelScrollSensitivity": 2, // Mouse wheel scroll speed
-  //? Editor
-  "editor.smoothScrolling": true, // Disable smooth scrolling
-  "editor.scrollBeyondLastLine": false, // Disable scroll beyond last line
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 0,
-  "editor.scrollbar.horizontalScrollbarSize": 0,
-  "editor.mouseWheelScrollSensitivity": 2, // Mouse wheel scroll speed
-
-  /*
-       
-  */
-  //* Files
-  "files.autoSave": "off", // Disable auto save
-  "window.openFilesInNewWindow": "off", // Open files in the same window
-  "files.maxMemoryForLargeFilesMB": 8196, // Max file size
-  /*
-     
-  */
-  //* Security
-  "explorer.confirmDelete": false, // Disable delete confirmation
-  "explorer.confirmDragAndDrop": false, // Disable drag and drop confirmation
-  "security.workspace.trust.banner": "never", // Disable trust banner
-  "security.workspace.trust.enabled": false, // Disable trust
-  "security.workspace.trust.untrustedFiles": "open", // Open untrusted files
+  //* VSC security
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
   /*
      
   */
   //* Extensions
-  "extensions.webWorker": true, // Enable web worker
-  "extensions.autoUpdate": false, // Disable auto update
-  "extensions.autoCheckUpdates": true, // Enable update check
-  "extensions.ignoreRecommendations": true, // Ignore recommendations
+  "extensions.webWorker": true,
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": true,
+  "extensions.ignoreRecommendations": true,
+  /*
+     
+  */
+  //* Files
+  "files.autoSave": "off",
+  "files.maxMemoryForLargeFilesMB": 8196,
+  "files.autoGuessEncoding": true,
+  /*
+     
+  */
+  //* Theme
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Atom Background Modified Italic",
+  "workbench.productIconTheme": "bongocat",
+  /*
+     
+  */
+  //* Editor
+  "editor.lineNumbers": "on",
+  "editor.folding": false,
+  "editor.stablePeek": false,
+  "editor.glyphMargin": false,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.stickyScroll.enabled": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.bracketPairColorization.enabled": true,
+  //? Editor scroll
+  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.scrollBeyondLastLine": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.smoothScrolling": true,
+  //? Editor minimap
+  "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
+  //? Editor paddings
+  "editor.padding.top": 2,
+  "editor.padding.bottom": 0,
+  //? Editor font
+  "editor.fontFamily": "Fira Code, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "550",
+  "editor.letterSpacing": 0,
+  "editor.lineHeight": 0,
+  //? Editor goto
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  /*
+     
+  */
+  //* Integrated terminal
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  //? Terminal scroll
+  "terminal.integrated.mouseWheelScrollSensitivity": 1,
+  "terminal.integrated.smoothScrolling": true,
+  //? Terminal font
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "Consolas",
+  /*
+     
+  */
+  //* Window
+  "window.commandCenter": false,
+  "window.confirmBeforeClose": "keyboardOnly",
+  "window.customMenuBarAltFocus": false,
+  "window.density.editorTabHeight": "compact",
+  "window.menuBarVisibility": "toggle",
+  "window.newWindowDimensions": "inherit",
+  "window.openFilesInNewWindow": "off",
+  "window.restoreFullscreen": true,
+  "window.restoreWindows": "all",
+  "window.title": "${rootName}",
+  "window.zoomLevel": 0,
   /*
      
   */
   //* Explorer
-  "explorer.confirmPasteNative": false, // Disable paste confirmation
-  "explorer.fileNesting.enabled": false, // Disable file nesting
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": true,
+  "explorer.fileNesting.enabled": false,
+  //? Confirm
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   /*
      
   */
   //* Workbench
-  "workbench.tips.enabled": false, // Disable tips
-  "workbench.startupEditor": "none", // Open empty window if no files are opened
-  "workbench.layoutControl.enabled": false, // Disable layout control buttons
-  "workbench.editor.empty.hint": "hidden", // Hide empty editor hint
-  "workbench.editor.closeOnFileDelete": true, // Close file tab on file delete
-  /*
-     
-  */
-  //* Sidebar config
-  "workbench.sideBar.location": "right", // Move sidebar to the right
-  "explorer.decorations.colors": true, // Show git file status colors
-  "explorer.decorations.badges": false, // Disable git file status badges
-  /* 
-  
-  */
-  //* Sidebar folder tree
-  "explorer.autoReveal": false, // Disable auto reveal
-  "explorer.compactFolders": false, // Disable compact folders
-  "symbols.hidesExplorerArrows": false, // Show folder arrows
-  "workbench.tree.indent": 14, // Folder left padding size
-  "workbench.tree.expandMode": "doubleClick", // Expand mode
-  "workbench.tree.renderIndentGuides": "always", // Show folder left padding
-  /*
-   
-  */
-  //* File tab title config
-  "window.density.editorTabHeight": "compact", // Compact tabs height
-  "workbench.editor.tabSizing": "shrink", // Shrink tabs size
-  "workbench.editor.wrapTabs": true, // Wrap tabs
-  "workbench.editor.labelFormat": "default", // Don't show file path in tab title
-  "workbench.editor.enablePreview": false, // Disable preview mode
-  "workbench.editor.decorations.colors": true, // Show git file status colors
-  "workbench.editor.decorations.badges": false, // Don't show git file status badges
-  "workbench.editor.tabActionLocation": "right", // Add small bongo cat icon
+  "workbench.sideBar.location": "right",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.statusBar.visible": true,
+  "workbench.view.alwaysShowHeaderActions": true,
+  //? Files tree
+  "workbench.tree.indent": 12,
+  "workbench.tree.expandMode": "doubleClick",
+  "workbench.tree.renderIndentGuides": "none",
+  //? Scroll
+  "workbench.list.smoothScrolling": true,
+  "workbench.list.mouseWheelScrollSensitivity": 2,
+  //? File tab config
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.labelFormat": "default",
+  "workbench.editor.tabActionLocation": "right",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.wrapTabs": true,
   /*
    
-  */
-  //* Editor
-  "editor.folding": false, // Disable folding
-  "editor.stablePeek": false, // Disable peek editor
-  "editor.glyphMargin": false, // Remove margin between line numbers and window border
-  "editor.quickSuggestionsDelay": 0, // Quick suggestions delay
-  "editor.stickyScroll.enabled": false, // Disable sticky scroll
-  "editor.hideCursorInOverviewRuler": true, // Hide cursor in overview ruler
-  "editor.bracketPairColorization.enabled": true, // Enable bracket pair colorization
-  "scm.diffDecorations": "none",
-  /* 
-  
-  */
-  //* Editor minimap
-  "editor.minimap.enabled": false, // Disable minimap
-  "editor.minimap.renderCharacters": false, // Disable minimap characters
-  /* 
-  
-  */
-  //* Editor paddings
-  "editor.padding.top": 2,
-  "editor.padding.bottom": 0,
-  /*
-
   */
   //* Goto
   "references.preferredLocation": "view", // Open references in sidebar
   "testing.automaticallyOpenPeekView": "never", // Disable peek view
-  "editor.gotoLocation.multipleReferences": "goto", // Open multiple references in sidebar
-  "editor.gotoLocation.multipleDefinitions": "goto", // Open multiple definitions in sidebar
-  "editor.gotoLocation.multipleDeclarations": "goto", // Open multiple declarations in sidebar
-  "editor.gotoLocation.multipleImplementations": "goto", // Open multiple implementations in sidebar
-  "editor.gotoLocation.multipleTypeDefinitions": "goto", // Open multiple type definitions in sidebar
   /*
      
   */
   //* Breadcrumbs
-  "breadcrumbs.enabled": true, // Enable breadcrumbs
+  "breadcrumbs.enabled": true,
   "breadcrumbs.icons": false,
   "breadcrumbs.symbolPath": "off",
   "breadcrumbs.showKeys": false,
@@ -188,15 +177,24 @@
    
   */
   //* Import coast (extension)
-  // Add import cost to the end of the import line
   "importCost.margin": 1,
   "importCost.fontStyle": "italic",
-  "importCost.showCalculatingDecoration": true, // Show fallback decoration
-  "importCost.bundleSizeDecoration": "both", // Show original and minified cost
+  "importCost.bundleSizeDecoration": "both",
+  "importCost.showCalculatingDecoration": true,
   //? Color settings
-  "importCost.smallPackageDarkColor": "green",
-  "importCost.mediumPackageDarkColor": "orange",
-  "importCost.largePackageDarkColor": "red",
+  "importCost.smallPackageDarkColor": "#98C379",
+  "importCost.mediumPackageDarkColor": "#ABB2BF",
+  "importCost.largePackageDarkColor": "#ABB2BF",
+  /*
+   
+  */
+  //* Inline fold (extension)
+  "inlineFold.autoFold": true,
+  "inlineFold.togglePerFile": true,
+  "inlineFold.maskChar": "•⩊•",
+  "inlineFold.unfoldedOpacity": 1,
+  "inlineFold.maskColor": "#98C379",
+  "inlineFold.regex": "(class|className)=(({(`|))|(['\"`]))(.*?)(\\2|(\\4)})",
   /*
    
   */
@@ -205,19 +203,20 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
+  "git.openDiffOnClick": true,
   /*
      
   */
   //* Task manager config (extension)
-  "taskexplorer.autoRefresh": true,
+  "taskExplorer.autoRefresh": true,
   "taskExplorer.showFavoritesButton": false,
   /*
      
   */
   //* Spellchecker (extension)
-  "cSpell.enabled": true, // Enable spellchecker
-  "cSpell.language": "en", // Set language
-  "cSpell.words": [], // Add custom words
+  "cSpell.enabled": true,
+  "cSpell.language": "en",
+  "cSpell.words": [],
   "cSpell.enableFiletypes": [
     "blade",
     "jsx",
@@ -232,43 +231,38 @@
   
   */
   //* Code runner (extension)
-  "python.terminal.executeInFileDir": true, // Run python code in file directory
-  "code-runner.runInTerminal": true, // Run code in terminal
+  "python.terminal.executeInFileDir": true,
+  "code-runner.runInTerminal": true,
   /* 
   
   */
   //* Todo tree (extension)
-  "todo-tree.tree.flat": true, // Flat tree
-  "todo-tree.tree.expanded": true, // Expand tree
-  "todo-tree.tree.scanAtStartup": true, // Scan at startup
-  "todo-tree.tree.autoRefresh": true, // Auto refresh todo tree
-  "todo-tree.highlights.enabled": false, // Disable highlights
-  "todo-tree.highlights.useColourScheme": false, // Use custom colors
-  "todo-tree.tree.disableCompactFolders": true, // Disable compact folders
+  "todo-tree.highlights.enabled": false,
+  "todo-tree.highlights.useColourScheme": false,
+  "todo-tree.tree.autoRefresh": true,
+  "todo-tree.tree.disableCompactFolders": true,
+  "todo-tree.tree.expanded": true,
+  "todo-tree.tree.flat": true,
+  "todo-tree.tree.scanAtStartup": true,
   /* 
   
   */
   //* Format
-  "editor.formatOnSave": true, // Format on save
-  "editor.formatOnPaste": false, // Disable format on paste
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // (extension)
-  /*
-     
-  */
-  //* Eslint (extension)
-  "eslint.run": "onSave", // Run on save
-  "eslint.format.enable": true, // Enable format
-  /*
-     
-  */
-  //* Prettier (extension)
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //? Eslint (extension)
+  "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  //? Prettier (extension)
   "prettier.useEditorConfig": true,
+  "prettier.requireConfig": true,
   "prettier.configPath": ".prettierrc",
   /*
      
   */
   //* Emmet (Shortcut for html tags)
-  "emmet.triggerExpansionOnTab": true, // Run using tab
+  "emmet.triggerExpansionOnTab": true,
   "emmet.optimizeStylesheetParsing": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
@@ -281,25 +275,26 @@
   //* Languages config
   //? TS & JS
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
-  "typescript.updateImportsOnFileMove.enabled": "always", // Update imports on file move
-  "[typescript, typescriptreact]": {
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  //? React
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
-  "javascript.updateImportsOnFileMove.enabled": "always", // Update imports on file move
-  "[javascript, javascriptreact]": {
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   //? Css
-  "[css, sass, scss, postcss]": {
-    "editor.tabSize": 2,
-    "editor.colorDecorators": false
-  },
   "[css]": {
+    "editor.tabSize": 2,
+    "editor.colorDecorators": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[sass]": {
+    "editor.tabSize": 2,
+    "editor.colorDecorators": false,
     "editor.defaultFormatter": "syler.sass-indented"
   },
   "[postcss]": {},
@@ -321,15 +316,16 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  //? wtf
+  //? Markdown
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor",
+    "*.md": "cweijan.vscode-markdown-enhanced",
     "{git,gitlens}:/**/*.{md,csv,svg}": "default"
   },
+  "vscode-office.editorTheme": "Auto",
   /*
      
   */
-  //* Telemetry (LOL)
+  //* Telemetry
   "telemetry.telemetryLevel": "off",
   "redhat.telemetry.enabled": false,
   "postman.telemetry.enabled": false,
