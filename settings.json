@@ -5,40 +5,36 @@
   "update.showReleaseNotes": true,
   "update.enableWindowsBackgroundUpdates": false,
   /*
-     
-  */
+
+    */
   //* VSC security
   "security.workspace.trust.banner": "never",
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
   /*
-     
-  */
+
+    */
   //* Extensions
   "extensions.webWorker": true,
   "extensions.autoUpdate": false,
   "extensions.autoCheckUpdates": true,
   "extensions.ignoreRecommendations": true,
   /*
-     
-  */
+
+    */
   //* Files
   "files.autoSave": "off",
   "files.maxMemoryForLargeFilesMB": 8196,
   "files.autoGuessEncoding": true,
-  /*
-     
-  */
-  //* Theme
-  "workbench.iconTheme": "material-icon-theme",
+  "files.trimTrailingWhitespace": true,
   "workbench.colorTheme": "Atom Background Modified Italic",
   "workbench.productIconTheme": "bongocat",
   /*
-     
-  */
+
+    */
   //* Editor
   "editor.lineNumbers": "on",
-  "editor.folding": false,
+  "editor.folding": true,
   "editor.stablePeek": false,
   "editor.glyphMargin": false,
   "editor.quickSuggestionsDelay": 0,
@@ -48,8 +44,8 @@
   //? Editor scroll
   "editor.mouseWheelScrollSensitivity": 2,
   "editor.scrollBeyondLastLine": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.horizontal": "visible",
+  "editor.scrollbar.horizontalScrollbarSize": 2,
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.smoothScrolling": true,
@@ -73,8 +69,8 @@
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   /*
-     
-  */
+
+    */
   //* Integrated terminal
   "terminal.integrated.cursorStyle": "underline",
   "terminal.integrated.cursorBlinking": true,
@@ -88,14 +84,14 @@
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontFamily": "Consolas",
   /*
-     
-  */
+
+    */
   //* Window
+  "window.menuBarVisibility": "toggle",
   "window.commandCenter": false,
   "window.confirmBeforeClose": "keyboardOnly",
   "window.customMenuBarAltFocus": false,
   "window.density.editorTabHeight": "compact",
-  "window.menuBarVisibility": "toggle",
   "window.newWindowDimensions": "inherit",
   "window.openFilesInNewWindow": "off",
   "window.restoreFullscreen": true,
@@ -103,8 +99,8 @@
   "window.title": "${rootName}",
   "window.zoomLevel": 0,
   /*
-     
-  */
+
+    */
   //* Explorer
   "explorer.autoReveal": false,
   "explorer.compactFolders": false,
@@ -115,11 +111,6 @@
   //? Confirm
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  /*
-     
-  */
-  //* Workbench
-  "workbench.sideBar.location": "right",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.empty.hint": "hidden",
   "workbench.layoutControl.enabled": false,
@@ -128,7 +119,8 @@
   "workbench.statusBar.visible": true,
   "workbench.view.alwaysShowHeaderActions": true,
   //? Files tree
-  "workbench.tree.indent": 12,
+  "workbench.sideBar.location": "right",
+  "workbench.tree.indent": 15,
   "workbench.tree.expandMode": "doubleClick",
   "workbench.tree.renderIndentGuides": "none",
   //? Scroll
@@ -142,15 +134,16 @@
   "workbench.editor.tabActionLocation": "right",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.wrapTabs": true,
+  "workbench.panel.showLabels": false,
   /*
-   
-  */
+
+    */
   //* Goto
   "references.preferredLocation": "view", // Open references in sidebar
   "testing.automaticallyOpenPeekView": "never", // Disable peek view
   /*
-     
-  */
+
+    */
   //* Breadcrumbs
   "breadcrumbs.enabled": true,
   "breadcrumbs.icons": false,
@@ -174,8 +167,8 @@
   "breadcrumbs.showEnumMembers": false,
   "breadcrumbs.showConstructors": false,
   /*
-   
-  */
+
+    */
   //* Import coast (extension)
   "importCost.margin": 1,
   "importCost.fontStyle": "italic",
@@ -186,8 +179,8 @@
   "importCost.mediumPackageDarkColor": "#ABB2BF",
   "importCost.largePackageDarkColor": "#ABB2BF",
   /*
-   
-  */
+
+    */
   //* Inline fold (extension)
   "inlineFold.autoFold": true,
   "inlineFold.togglePerFile": true,
@@ -196,46 +189,31 @@
   "inlineFold.maskColor": "#98C379",
   "inlineFold.regex": "(class|className)=(({(`|))|(['\"`]))(.*?)(\\2|(\\4)})",
   /*
-   
-  */
-  //* Git config
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.openRepositoryInParentFolders": "never",
-  "git.openDiffOnClick": true,
+
+    */
+  //* Highlight matching tag (extension)
+  "highlight-matching-tag.enabled": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "underline": "#98C379"
+      }
+    },
+    "closing": {
+      "name": {
+        "underline": "#98C379"
+      }
+    }
+  },
   /*
-     
-  */
-  //* Task manager config (extension)
-  "taskExplorer.autoRefresh": true,
-  "taskExplorer.showFavoritesButton": false,
-  /*
-     
-  */
-  //* Spellchecker (extension)
-  "cSpell.enabled": true,
-  "cSpell.language": "en",
-  "cSpell.words": [],
-  "cSpell.enableFiletypes": [
-    "blade",
-    "jsx",
-    "tsx",
-    "ts",
-    "js",
-    "scss",
-    "sass",
-    "vue"
-  ],
-  /* 
-  
-  */
+
+    */
   //* Code runner (extension)
   "python.terminal.executeInFileDir": true,
   "code-runner.runInTerminal": true,
-  /* 
-  
-  */
+  /*
+
+    */
   //* Todo tree (extension)
   "todo-tree.highlights.enabled": false,
   "todo-tree.highlights.useColourScheme": false,
@@ -244,9 +222,9 @@
   "todo-tree.tree.expanded": true,
   "todo-tree.tree.flat": true,
   "todo-tree.tree.scanAtStartup": true,
-  /* 
-  
-  */
+  /*
+
+    */
   //* Format
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
@@ -259,8 +237,8 @@
   "prettier.requireConfig": true,
   "prettier.configPath": ".prettierrc",
   /*
-     
-  */
+
+    */
   //* Emmet (Shortcut for html tags)
   "emmet.triggerExpansionOnTab": true,
   "emmet.optimizeStylesheetParsing": true,
@@ -270,8 +248,8 @@
     "blade": "html"
   },
   /*
-     
-  */
+
+    */
   //* Languages config
   //? TS & JS
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
@@ -323,18 +301,29 @@
   },
   "vscode-office.editorTheme": "Auto",
   /*
-     
-  */
+
+    */
   //* Telemetry
   "telemetry.telemetryLevel": "off",
   "redhat.telemetry.enabled": false,
   "postman.telemetry.enabled": false,
-  /* 
-  
-  */
+  /*
+
+    */
   //* Remote hosts
   "remote.SSH.remotePlatform": {
     "147.45.137.180": "linux",
     "217.25.90.240": "linux"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "remote.portsAttributes": {
+    "5000": {
+      "protocol": "https"
+    }
+  },
+  "git.enableSmartCommit": true,
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
